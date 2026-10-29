@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>Mega Market - الرئيسية</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="https://images.icon-icons.com/567/PNG/96/store_icon-icons.com_54371.png">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+
+        body {
+            margin: 0;
+            font-family: 'Cairo', sans-serif;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fad0c4);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            color: #fff;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            background: rgba(0,0,0,0.4);
+            border-bottom: 3px solid #fff;
+            animation: fadeInDown 1s ease-out;
+        }
+
+        header h1 {
+            font-size: 48px;
+            margin: 0;
+            color: #fff;
+        }
+
+        nav {
+            background: rgba(0, 0, 0, 0.3);
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 15px;
+            animation: fadeIn 2s ease-out;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 18px;
+            border-radius: 25px;
+            transition: 0.4s;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        nav a:hover {
+            background-color: #fff;
+            color: #000;
+        }
+
+        .section {
+            text-align: center;
+            padding: 50px 30px;
+            animation: fadeInUp 1.5s ease-out;
+        }
+
+        .section h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .section p {
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            background-color: #fff;
+            color: #333;
+            border: none;
+            padding: 12px 28px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #ff4081;
+            color: #fff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.4);
+            border-top: 2px solid #fff;
+            font-size: 14px;
+        }
+
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>مرحباً بك في Mega Market</h1>
+</header>
+
+
+<nav>
+    <a href="index.html">الرئيسية</a>
+    <a href="products.html">المنتجات</a>
+    <a href="cart.html">العربة</a>
+    <a href="login.html">تسجيل الدخول</a>
+</nav>
+
+<section class="section">
+    <h2>🌟 عروض مذهلة في انتظارك!</h2>
+    <p>تسوق الآن واكتشف أفضل الأسعار على كل شيء!</p>
+    <a class="btn" href="products.html">ابدأ التسوق</a>
+</section>
+
+<section class="section">
+    <h2>🛒 أقسام متنوعة</h2>
+    <p>كل اللي تحتاجه في مكان واحد - من الإلكترونيات للأزياء!</p>
+    <a class="btn" href="products.html">استعرض الأقسام</a>
+</section>
+
+<section class="section">
+    <h2>📞 تواصل معنا</h2>
+    <p>أي استفسار؟ إحنا دايمًا جاهزين نساعدك</p>
+    <a class="btn" href="https://www.chatbase.co/dashboard/hossam-eldiens-team/chatbot/5PukveLog6GsFN_Vcx_ap">راسلنا الآن</a>
+</section>
+
+<footer>
+    &copy; 2025 Mega Market - جميع الحقوق محفوظة
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>عربة التسوق - Mega Market</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="https://images.icon-icons.com/567/PNG/96/store_icon-icons.com_54371.png">
+</head>
+<body>
+<header><h1>Mega Market</h1></header>
+<nav>
+    <a href="index.html">الرئيسية</a>
+    <a href="products.html">المنتجات</a>
+    <a href="cart.html">العربة</a>
+    <a href="login.html">تسجيل الدخول</a>
+</nav>
+
+<div class="cart-container">
+    <h2>🛒 عربة التسوق</h2>
+    <div id="cart-items"></div>
+    <div class="total" id="total-price">المجموع: 0 جنيه</div>
+    <button class="checkout-btn" onclick="processCheckout()">إتمام الشراء</button>
+</div>
+
+<footer>&copy; 2025 Mega Market - جميع الحقوق محفوظة</footer>
+
+<script src="app.js"></script>
+<script>
+    loadCartItems();
+</script>
+</body>
+</html>

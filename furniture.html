@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>🏠 أثاث منزلي - Mega Market</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="https://images.icon-icons.com/567/PNG/96/store_icon-icons.com_54371.png">
+
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            background: linear-gradient(135deg, #141e30, #243b55);
+            color: #fff;
+        }
+        .products-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 30px;
+        }
+        .product {
+            background-color: rgba(255,255,255,0.07);
+            border-radius: 15px;
+            padding: 15px;
+            text-align: center;
+            transition: 0.3s;
+        }
+        .product:hover {
+            background-color: rgba(255,255,255,0.15);
+            transform: scale(1.02);
+        }
+        .product img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .product h3 {
+            margin: 10px 0 5px;
+        }
+        .product p {
+            margin: 5px 0;
+        }
+        .product button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 20px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        .product button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🏠 أثاث منزلي</h1>
+</header>
+
+<nav>
+    <a href="index.html">الرئيسية</a>
+    <a href="products.html">الأقسام</a>
+    <a href="cart.html">العربة</a>
+</nav>
+
+<section class="products-container">
+
+        <div class="product">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.sH-iroMl16WqzUbHoapB_gHaEo&pid=Api&P=0&h=220" alt="🏠 أثاث منزلي منتج 1">
+            <h3>🏠 أثاث منزلي منتج 1</h3>
+            <p>السعر: 35000 جنيه</p>
+            <button onclick="addToCart('🏠 أثاث منزلي منتج 1', 35000)">إضافة إلى العربة</button>
+        </div>
+        
+        <div class="product">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.oInR1xH5vFDOgB8sWOsneAHaE3&pid=Api&P=0&h=220" alt="🏠 أثاث منزلي منتج 2">
+            <h3>🏠 أثاث منزلي منتج 2</h3>
+            <p>السعر: 40000 جنيه</p>
+            <button onclick="addToCart('🏠 أثاث منزلي منتج 2', 40000)">إضافة إلى العربة</button>
+        </div>
+        
+        <div class="product">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.qQgWS5P_JW3_GhOpZYVDvwHaHP&pid=Api&P=0&h=220" alt="🏠 أثاث منزلي منتج 3">
+            <h3>🏠 أثاث منزلي منتج 3</h3>
+            <p>السعر: 45000 جنيه</p>
+            <button onclick="addToCart('🏠 أثاث منزلي منتج 3', 45000)">إضافة إلى العربة</button>
+        </div>
+        
+        <div class="product">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.nSq8ROpSMiB5GAhym1dH9wHaDn&pid=Api&P=0&h=220" alt="🏠 أثاث منزلي منتج 4">
+            <h3>🏠 أثاث منزلي منتج 4</h3>
+            <p>السعر: 50000 جنيه</p>
+            <button onclick="addToCart('🏠 أثاث منزلي منتج 4', 500000)">إضافة إلى العربة</button>
+        </div>
+        
+        <div class="product">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.GXre5yMjPCiLkTWNACH0xQHaFj&pid=Api&P=0&h=220" alt="🏠 أثاث منزلي منتج 5">
+            <h3>🏠 أثاث منزلي منتج 5</h3>
+            <p>السعر: 55000 جنيه</p>
+            <button onclick="addToCart('🏠 أثاث منزلي منتج 5', 55000)">إضافة إلى العربة</button>
+        </div>
+        
+</section>
+
+<footer>
+    &copy; 2025 Mega Market - جميع الحقوق محفوظة
+</footer>
+
+<script>
+function addToCart(name, price) {
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    cart.push({name: name, price: price});
+    localStorage.setItem('cart', JSON.stringify(cart));
+    alert("✅ " + name + " تمت إضافته إلى العربة");
+}
+</script>
+
+</body>
+</html>

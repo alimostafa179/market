@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>الأقسام - Mega Market</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="https://images.icon-icons.com/567/PNG/96/store_icon-icons.com_54371.png">
+
+    <style>
+        .products-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            padding: 40px;
+            animation: fadeInUp 1.5s ease-out;
+        }
+
+        .product-card {
+            background-color: rgba(255, 255, 255, 0.15);
+            border-radius: 20px;
+            padding: 20px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .product-card:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            transform: scale(1.03);
+        }
+
+        .product-card h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        .product-card a button {
+            margin-top: 10px;
+            background-color: #fff;
+            color: #333;
+            padding: 8px 20px;
+            border: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .product-card a button:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>تصفح أقسام Mega Market</h1>
+</header>
+
+<nav>
+    <a href="index.html">الرئيسية</a>
+    <a href="products.html">المنتجات</a>
+    <a href="cart.html">العربة</a>
+    <a href="login.html">تسجيل الدخول</a>
+</nav>
+
+<section class="products-container">
+
+    <div class="product-card">
+        <h3>📱 إلكترونيات</h3>
+        <a href="electronics.html"><button>عرض المنتجات</button></a>
+    </div>
+    
+    <div class="product-card">
+        <h3>👕 ملابس</h3>
+        <a href="clothing.html"><button>عرض المنتجات</button></a>
+    </div>
+    
+    <div class="product-card">
+        <h3>🏠 أثاث منزلي</h3>
+        <a href="furniture.html"><button>عرض المنتجات</button></a>
+    </div>
+    
+    
+    <div class="product-card">
+        <h3>🎮 ألعاب</h3>
+        <a href="games.html"><button>عرض المنتجات</button></a>
+    </div>
+    
+    <div class="product-card">
+        <h3>📚 كتب</h3>
+        <a href="books.html"><button>عرض المنتجات</button></a>
+    </div>
+    
+    <div class="product-card">
+        <h3>🧴 بقاله</h3>
+        <a href="beauty.html"><button>عرض المنتجات</button></a>
+    </div>
+    
+    
+</section>
+
+<footer>
+    &copy; 2025 Mega Market - جميع الحقوق محفوظة
+</footer>
+
+</body>
+</html>
